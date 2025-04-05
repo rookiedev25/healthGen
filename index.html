@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HealthGen – Your Personalized Health Plan</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header class="navbar">
+        <h1 class="logo">HealthGen</h1>
+    </header>
+
+    <section class="hero">
+        <h2>Your Personalized Health Journey Begins Here</h2>
+        <p>Let’s create a custom health plan that fits your goals and lifestyle.</p>
+    </section>
+
+    <section class="form-section">
+        <form id="healthForm" class="form-container">
+            <div class="input-group">
+                <label for="goal">Health Goal</label>
+                <select id="goal" required>
+                    <option value="">Select your goal</option>
+                    <option value="weight-loss">Weight Loss</option>
+                    <option value="muscle-gain">Muscle Gain</option>
+                    <option value="maintain-health">Maintain Health</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="activity">Activity Level</label>
+                <select id="activity" required>
+                    <option value="">Select activity level</option>
+                    <option value="sedentary">Sedentary</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="active">Active</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="details">Tell Us More <span class="optional">(optional)</span></label>
+                <textarea id="details" rows="2"
+                    placeholder="Mention any specific preferences or challenges…"></textarea>
+                <div id="wordCount" class="word-counter">0/100 words</div>
+            </div>
+
+            <button type="submit" class="submit-btn">Generate Plan</button>
+        </form>
+
+        <div id="result" class="result-container"></div>
+    </section>
+
+    <section class="testimonials">
+        <h3>How People Use HealthGen</h3>
+        <div class="review-card">
+            <p>"I lost 6kg in 2 months following my personalized plan. Easy, realistic, and motivating!"</p>
+            <span>- Priya S., Bangalore</span>
+        </div>
+        <div class="review-card">
+            <p>"I finally found a plan that fits my office lifestyle. No strict dieting or insane workouts."</p>
+            <span>- Aman R., Mumbai</span>
+        </div>
+        <div class="review-card">
+            <p>"HealthGen gave me structure without stress. It’s now part of my daily routine."</p>
+            <span>- Neha K., Delhi</span>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Made with 💙 for health-conscious minds. © 2025 HealthGen | rookieDev25</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
